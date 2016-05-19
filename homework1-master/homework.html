@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+    // Sual 01 -Aşağıdakı kodun netice nedir ve sebebini izah edin.
+
+
+    // var y = 1;
+    // if (function f(){}) { >>>>>>>>>>> (function f(){}) gorunduyu kimi bizim function bir nov serhedlenib, yeni ancaq sert 
+    //   y += typeof f;>>>>>>>>>>>>>>>>> daxilinde taninir. buna gorede typeof f olaraq undefined deyeri gonderer.
+    // }
+    // console.log(y);
+
+
+    // Sual 02 - Aşağıdakı massivin icini nece usulla bosaldmaq olar izah edin.
+
+    // var myArr =  ['a','b','c','d','e','f'];
+    //myArr = [];
+
+    //myArr.length=0;
+
+    //while(myArr.length>0) {
+    //   myArr.shift();
+    //}
+
+    // while(myArr.length>0) {
+    //    myArr.pop();
+    // }
+
+    // myArr.splice(0,myArr.length);
+
+    //console.log(myArr);
+
+    // Sual 03 - Aşağıdakı verilen kodların neticeleri ve sebeblerini izah edin.
+
+
+    //    var bar = true;     >>>>>> TRUE ifadesi riyazi menada 1 kimi de goturulur onda
+    // console.log(bar + 0);   >>>>>>>>>>(1+0)=1
+    // console.log(bar + "xyz");  >>>>>>> Burada 'xyz' stringdir + ise toplama yox connector vezifesini yerine yetirecek(truexyz)
+    // console.log(bar + true);  (bar=true=1 +1=2)
+    // console.log(bar + false);(1+0=1)
+
+
+    // Sual 04 - Asagıdakı kodun neticesi nedir ve sebebini izah edin.
+
+    // var salary = "1000$";
+
+    // (function () {
+    //     console.log("Original salary was " + salary);
+    //    var salary = "5000$";
+    //     console.log("My New Salary " + salary);
+    // })();
+    // Verilen kodun neticesi Original Salary ucun undefined dir. Sebeb ise colde verilen global deyiseni,hemin adda yeniden local deyisen olaraq yaratmisiq(with var). bu ise verilen console log dan oncedir. Netice ise undefined yeni teyin olunmuyub. funksiya yuxaridan asagiya dogru icra olunur ve ona en yaxin olan eyni adda globali olsa bele ona yaxin olan funksiya daxili salary i deyisken kimi gorur. Lakin biz funskiyanin daxilindeki var sozunu silsek, bu zaman global deyisen taninir ve console-a 1000$ ve 5000$ i cixardar. 5000 i cixarmasina sebeb ise global deyisene yeni deyeri menimsetmeyidir.
+
+    // Sual 05 - 
+
+    //Verilenler: Bu verilenlere gore istifadeci terefinden girilen reqeme esasen divler yaranacaq ekranda ve bu divler 4 sütün seklinde ekranda gorunecek. Ekrandakı divlerin her setirde 3.cu yerde duran div border: 2px solid red  xususiyyetine sahib olacaq. (bu meselen constructor function istifade olunaraq yazılacaq.)
+
+    var width = Number(prompt("Genislik daxil edin *px:", ""));
+    var height = Number(prompt("Hundurluk daxil edin *px", ""));
+    var color = prompt("Reng daxil edin *str", "");
+    var divCount = Number(prompt("Div sayi daxil edin ", ""));
+    alert("Isteyiniz qeyde alinmisdir")
+
+    function Creator(width, height, color, count) {
+        this.width = width,
+            this.height = height,
+            this.color = color,
+            this.divCount = count,
+            (function() {
+                for (var i = 1; i < this.divCount; i++) {
+                    if ((i + 1) % 4 === 0) {
+                        document.write("<div style='margin:2px;width:" + this.width + "px;height:" + this.height + "px;  background:" + this.color + "; border: 2px solid red;'></div>");
+                    } else if (i % 4 === 0) {
+                        document.write("<div style='margin:2px;width:" + this.width + "px;  height:" + this.height + "px;  background:" + this.color + "'></div></div>");
+                    } else if ((i - 1) % 4 === 0 || i === 1) {
+                        document.write("<div class='main' style='margin:2px;display:flex'><div style='margin:2px;width:" + this.width + "px;height:" + this.height + "px;  background:" + this.color + "'></div>")
+                    } else {
+                        document.write("<div style='margin:2px;width:" + this.width + "px;height:" + this.height + "px;  background:" + this.color + "'></div>");
+                    }
+                }
+            })();
+    }
+    Creator(width, height, color, divCount);
+    </script>
+</body>
+
+</html>

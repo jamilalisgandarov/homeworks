@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--     <div class="main">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div> -->
+    <script>
+    var doxtur = function(a, b, c) {
+        document.write('<div class="main" style="width:' + a + 'px">');
+        for (var i = 1; i < b; i++) {
+            document.write('<div class="child" style="width:' + ((a / c) - 20) + 'px"></div>')
+        }
+        document.write('</div>')
+    }
+    doxtur(600, 16, 8);
+    </script>
+</body>
+
+</html>

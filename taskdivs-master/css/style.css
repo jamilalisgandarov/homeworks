@@ -1,0 +1,27 @@
+/*tr:first-child {
+    background-color: black;
+    color: white;
+}
+
+td {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+*/
+
+.main {
+    background-color: black;
+    /*    width: 600px;
+*/
+    /*    height: 400px;*/
+    padding: 20px;
+}
+
+.child {
+    /*  width: 100px;*/
+    height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+}

@@ -1,0 +1,60 @@
+body {
+    background-color: #296379;
+    text-align: center;
+}
+
+.main {
+    margin-left: 121px;
+    background-color: #5EA2A5;
+    width: 80%;
+    height: 457px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main #alarmDate {
+    background-color: none;
+}
+
+.main p {
+    font-size: 80px;
+    padding: 40px;
+    background-color: #C23247;
+}
+
+.child,
+.child1,
+.child2 {
+    padding: 60px;
+    color: #E4F0EC;
+}
+
+.child:before {
+    content: "HOURS";
+    font-size: 40px;
+    position: relative;
+    bottom: -56px;
+}
+
+.child1:before {
+    content: "MINUTES";
+    font-size: 40px;
+    position: relative;
+    bottom: -56px;
+}
+
+body h2 {
+    color: #E4F0EC;
+    margin-right: 6%;
+    font-size: 30px;
+    margin-top: 37px;
+    text-decoration: none;
+}
+
+.alarmDiv {
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    color: #E4F0EC;
+}

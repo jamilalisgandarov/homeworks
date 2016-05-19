@@ -1,0 +1,48 @@
+body {
+    background-color: #296379;
+}
+
+.main {
+    margin-left: 121px;
+    margin-top: 76px;
+    background-color: #5EA2A5;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main p {
+    font-size: 80px;
+    padding: 40px;
+    background-color: #C23247;
+}
+
+.child,
+.child1,
+.child2 {
+    padding: 60px;
+    color: #E4F0EC;
+}
+
+.child:before {
+    content: "HOURS";
+    font-size: 40px;
+    position: relative;
+    bottom: -56px;
+}
+
+.child1:before {
+    content: "MINUTES";
+    font-size: 40px;
+    position: relative;
+    bottom: -56px;
+}
+
+.child2:before {
+    content: "SECONDS";
+    font-size: 40px;
+    position: relative;
+    bottom: -56px;
+}
