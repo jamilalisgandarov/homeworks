@@ -1,0 +1,84 @@
+.mainFrame,
+.col-md-8 {
+    height: 600px;
+    display: block;
+}
+
+.myCaps {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    align-content: center;
+}
+
+.capsPic {
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("http://images.amcnetworks.com/amc.com/wp-content/uploads/2012/06/BB_S5B_004_L.jpg");
+}
+
+.capsPic img {}
+
+.inputsCss {
+    width: 800px;
+    height: 30px;
+}
+
+.marginLeft {
+    margin-left: 30px;
+}
+
+.verticalSpacer {
+    height: 10px;
+}
+
+.picText {
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btnCss {
+    border: none;
+    background-color: red;
+    border-radius: 0px;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+.mainBtns {
+    float: right;
+    margin-right: 58px;
+    clear: both;
+}
+
+input {
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+.endButtons {
+    margin-top: 35px;
+}
+
+#picTexts {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.marginTop {
+    margin-top: 10px;
+}

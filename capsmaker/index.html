@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="mainFrame col-md-offset-2 col-md-8">
+                <div class="verticalSpacer"></div>
+                <div class="myCaps">
+                    <h3>MyCapsMaker</h3></div>
+                <div class="verticalSpacer"></div>
+                <div class="capsPic marginLeft">
+                    <img src="" alt="">
+                    <div class="picText">
+                        <p id="picTexts"></p>
+                    </div>
+                </div>
+                <div class="verticalSpacer"></div>
+                <div class="addText">
+                    <input type="text" class="mainForm marginLeft inputsCss" id="text3" placeholder="Add the text you want">
+                    <div class="verticalSpacer"></div>
+                    <button class="btn marginLeft btnCss mainBtns" id="addBtn" onclick="myFunction()">Add Text</button>
+                    <div class="verticalSpacer"></div>
+                </div>
+                <div class="verticalSpacer"></div>
+                <div class="addPic">
+                    <input type="text" class="mainForm marginLeft inputsCss marginTop" id="text4" placeholder="Add the link you want">
+                    <div class="verticalSpacer"></div>
+                    <button class="btn marginLeft btnCss mainBtns" onclick="addPic()">Add Picture</button>
+                </div>
+                <div class="verticalSpacer"></div>
+                <div class="btns mainForm marginLeft">
+                    <button class="effect1 btnCss endButtons" onclick="border(true)">Effect 01</button>
+                    <button class="effect2 btnCss endButtons" onclick="backColor()"> Effect 02</button>
+                    <button class="effect3 btnCss endButtons" onclick="bold()"> Effect 03</button>
+                    <button class="effect4 btnCss endButtons" onclick="pictext()"> Effect 04</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("text3").value;
+        document.getElementById("picTexts").innerHTML = x;
+    }
+
+    function addPic() {
+        var y = document.getElementById("text4").value;
+        console.log(y);
+        document.getElementsByClassName("capsPic")[0].style.backgroundImage = 'url(' + y + ')';
+    }
+    var count = 0;
+
+    function border(value) {
+        count++;
+        if (count % 2 == 0) {
+            document.getElementsByClassName("capsPic")[0].setAttribute("style", "border:5px solid black");
+        } else {
+            document.getElementsByClassName("capsPic")[0].removeAttribute("style");
+        }
+
+    }
+
+    function backColor() {
+        count++;
+        if (count % 2 == 0) {
+
+            document.getElementsByClassName("picText")[0].style.backgroundColor = 'blue'
+        } else {
+
+            document.getElementsByClassName("picText")[0].style.backgroundColor = 'red'
+        }
+
+    }
+
+    function bold() {
+        count++;
+        if (count % 2 == 0) {
+            document.getElementById("picTexts").style.fontWeight = "900";
+        } else {
+
+            document.getElementById("picTexts").style.fontWeight = "100";
+        }
+    }
+
+    function pictext() {
+        count++;
+        if (count % 2 == 0) {
+            document.getElementsByClassName("picText")[0].removeAttribute("style");
+            document.getElementsByClassName("picText")[0].style.top = '0' + "px";
+
+        } else {
+            document.getElementsByClassName("picText")[0].removeAttribute("style");
+            document.getElementsByClassName("picText")[0].style.bottom = '0' + "px";
+        }
+    }
+    </script>
+</body>
+
+</html>
