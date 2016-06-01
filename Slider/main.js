@@ -8,11 +8,6 @@ for (i = 0; i < images.length; i++) {
     pics.setAttribute("src", imagesLittle[i])
     document.body.getElementsByClassName("img")[i].appendChild(pics);
 }
-for (j = 0; j < images.length; j++) {
-    document.getElementsByClassName("img")[i].onclick = function() { myFunc(i) };
-}
 
-function myFunc(i) {
-
-    document.getElementsByClassName("upSide")[0] =
-}
+var x = window.scrollX;
+console.log(x)

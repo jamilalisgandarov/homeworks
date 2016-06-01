@@ -1,0 +1,307 @@
+section {
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#menu {
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: none;
+}
+
+#about img {
+    width: 760px;
+    height: 570px;
+}
+
+#about h3 {
+    font-weight: bold;
+}
+
+#about .col-md-3 {
+    margin-top: 40px;
+    text-align: justify;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #282c35;
+}
+
+#about p:nth-child(4) {
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    padding-bottom: 27px;
+    color: #282c35;
+    border-bottom: 1px solid lightgray;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 6px 11px;
+    font-size: 17px;
+    transition: 0.25s linear;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#services h3 {
+    font-weight: bold;
+}
+
+#services .col-md-3 {
+    margin-top: 110px;
+}
+
+.commonP {
+    font-size: 18px;
+    font-weight: 300;
+    color: #282c35;
+}
+
+.commonPL {
+    font-size: 14px;
+    font-weight: 300;
+    color: #282c35;
+}
+
+.icons {
+    border: 1px solid lightgray;
+    padding: 28px;
+    height: 230px;
+    margin-top: 22px;
+}
+
+.icons p {
+    margin-top: 10px;
+}
+
+.icons i {
+    font-size: 55px;
+}
+
+.icons span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.workPics {
+    height: 250px;
+    margin-left: -15px;
+    position: relative;
+}
+
+.workPics img {
+    width: 370px;
+    position: absolute;
+    transition: 0.2s linear;
+}
+
+.overflow {
+    overflow: hidden;
+    position: relative;
+}
+
+.verticalSpacer {
+    height: 10px;
+    width: 100%;
+}
+
+.overlay,
+.overlay1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: black;
+    z-index: 3;
+    position: absolute;
+    transition: 0.2s linear;
+}
+
+.overlayedPicMain {
+    transition: 0.2s linear;
+}
+
+.mainImg {
+    width: 100%;
+    height: 98%;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainImg1 {
+    height: 245px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+}
+
+#works .col-md-3 {
+    margin-top: 200px;
+}
+
+.worksPerson {
+    width: 100%;
+    margin-top: 40px;
+    border: 1px solid lightgray;
+    height: 315px;
+    position: relative;
+    padding: 20px;
+}
+
+.worksPersonImgs {
+    width: 75px;
+    height: 75px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+    clear: both;
+}
+
+.worksPersonImg {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.worksPerson .commonPL {
+    margin-top: 100px;
+}
+
+#works button {
+    margin-top: 30px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.bold {
+    font-size: bold;
+}
+
+#clients {
+    padding-top: 150px;
+    background-color: #f4f5f5;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.iconsBorder {
+    padding: 20px;
+}
+
+.clientsIcons .col-md-2 {
+    border: 1px solid lightgray;
+}
+
+.clientsIcons {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.clientsIcons img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.hrFirst {
+    margin-top: 169px;
+    margin-bottom: 90px;
+    background: lightgray;
+    z-index: 4;
+    width: 100%;
+    height: 1px;
+}
+
+.info {
+    padding: 14px
+}
+
+.comments {
+    margin-top: 40px;
+}
+
+.customersSide {
+    margin-bottom: 50px;
+}
+
+.video {
+    transform: scale(1.3);
+    z-index: -1;
+    margin-top: 6px;
+}
+
+#video {
+    overflow: hidden;
+}
+
+.videoDark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.videoDark h1 {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    font-weight: 600;
+    opacity: 1;
+    font-size: 60px;
+}
+
+.videoDark p {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    opacity: 1;
+    font-size: 18px;
+}
+
+#team {
+    padding: 70px 0px;
+}
+
+.teamMemb img {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
