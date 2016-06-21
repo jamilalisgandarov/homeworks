@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+</head>
+
+<body class="blue-grey lighten-5">
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Something went wrong</h4>
+      <p>Please enter details correctly</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Something went wrong</h4>
+      <p>Please enter type of exam</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col s6 push-s3 main " style="padding: 21px 0px;">
+            <div class="mainFrame teal lighten-3">
+                <div class="col s12 heading"><span class="headText">IELTS Score Calculator</span></div>
+                <div class="row marginBottomZero">
+                <div class="col s6">
+                    <p>
+                        <input type="checkbox" id="test5" name="type"/>
+                        <label for="test5">Academic</label>
+                    </p></div>
+                    <div class="col s6">
+                    <p>
+                        <input type="checkbox" id="test6" name="type"/>
+                        <label for="test6">General</label>
+                    </p></div>
+                </div>
+                <div class="row marginBottomZero">
+                    <div class="input-field col s6">
+                        <input id="number" style="height:40px" type="number" class="validate reading">
+                        <label style="color: white" for="number">Reading</label>
+                    </div>
+                    <div class="input-field col s4">
+                         <input id="readingX"  data-position="bottom" data-delay="50" data-tooltip="Check your reading score by correct answers" style="height:40px" type="number" class="tooltipped validate ">
+                        <label style="color: white" for="number">Correct Answers</label>
+                    </div>
+                    <div class="col s2 ">
+                        <div class="resultR span">
+                            <span class="readingScore"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row marginBottomZero">
+                    <div class="input-field col s6">
+                        <input id="listening" style="height:40px" min="1" max="9" type="number" class=" validate listening">
+                        <label style="color: white" for="listening">Listening</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="listeningX" style="height:40px" type="number" data-position="bottom" data-delay="50" data-tooltip="Check your listening score by correct answers"  class=" tooltipped validate">
+                        <label style="color: white" for="listeningX">Correct Answers</label>
+                    </div>
+                    <div class="col s2 ">
+                        <div class="resultL span">
+                            <span class="listeningScore"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row marginBottomZero">
+                <div class="input-field col s10">
+                    <input id="writing" style="height:40px" type="number" class="validate writing">
+                    <label style="color: white" for="writing">Writing</label>
+                </div></div>
+                <div class="row marginBottomZero">
+                <div class="input-field col s10">
+                    <input id="speaking" style="height:40px" type="number" class="validate speaking">
+                    <label style="color: white" for="speaking">Speaking</label>
+                </div></div>
+                <div class="row marginBottomZero marginTop">
+                	<div class="col s4"><a class="waves-effect waves-light btn check">Check</a></div>
+                	<div class="col s7 push-s1 center">
+                		<span>Overall Score:      <span class="resultScore"> </span></span>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+        <script src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

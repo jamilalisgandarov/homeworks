@@ -137,6 +137,24 @@ button:hover {
     background-color: black;
     z-index: 3;
     position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.overlay1 i {
+    color: blue;
+    font-size: 20px;
+    cursor: hand;
+}
+
+.overlay2 {
+    width: 240px;
+    height: 240px;
+    opacity: 0;
+    background-color: black;
+    z-index: 3;
+    position: absolute;
     transition: 0.2s linear;
 }
 
@@ -304,4 +322,44 @@ button:hover {
     z-index: 1;
     margin-bottom: 20px;
     margin-right: 10px;
+}
+
+.mainImg2 {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background: black;
+    padding: 22px 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 4px;
+    color: white
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.iconsNet i {
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.gallery {
+    position: fixed;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height:
 }

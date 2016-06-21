@@ -1,0 +1,59 @@
+body{
+font-family: 'Raleway', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.mainFrame{
+	height: 30%;
+	background-color: white;
+	padding: 20px;
+	border: 4px solid white;
+}
+.main{
+	padding: 20px;
+}
+.heading{
+	text-align: center;
+	color: white;
+}
+.headText{	
+	font-size: 25px;
+}
+input::-webkit-input-placeholder {
+   color: white;
+}
+input,.white{
+	color: white !important;
+	font-size: 20px !important;
+}
+label{
+	color: white;
+}
+.span{
+    margin-top: 52px;
+    color: white;  
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+}
+.span span{
+	position: absolute;
+    top: -26px;
+}
+.marginBottomZero{
+	margin-bottom: 0px !important;
+}
+.marginTop{
+	    margin-top: 60px;
+}
+.center{
+	display: flex;
+    font-size: 25px;
+    color: white;
+    padding: 3px 0px !important;
+}

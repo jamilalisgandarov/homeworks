@@ -33,6 +33,22 @@ jQuery(document).ready(function($) {
             "transform": "scale(1)"
         })
     });
-    var myVid = $(".video");
-    console.log(myVid.muted = true);
+
+    $(".overlay2").mouseover(function(event) {
+        $(this).css({
+            "opacity": '0.5'
+        });
+        $(this).siblings().css({
+            "transform": "scale(1.1)"
+        })
+    });
+    $(".overlay2").mouseout(function(event) {
+        $(this).css({
+            "opacity": '0'
+        });
+        $(this).siblings().css({
+            "transform": "scale(1)"
+        })
+    });
+
 });
